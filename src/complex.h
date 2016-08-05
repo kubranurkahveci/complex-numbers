@@ -6,13 +6,13 @@ struct complex {
 	float im;
 };
 
-void add (struct complex *c1, struct complex *c2);
-void substract (struct complex *c1, struct complex *c2);
-void print (struct complex *c1, struct complex *c2);
-void multiply (struct complex *c1, struct complex *c2);
-int length (struct complex *c1);
-void compare (struct complex *c1, struct complex *c2);
-void real (struct complex *c1, struct complex *c2);
-void imaginary (struct complex *c1, struct complex *c2);
+struct complex add (struct complex *c1, struct complex *c2);
+struct complex substract (struct complex *c1, struct complex *c2);
+void print (struct complex *c1);
+struct complex multiply (struct complex *c1, struct complex *c2);
+float length (struct complex *c1);
+int compare (struct complex *c1, struct complex *c2);
+float real (struct complex *c1);
+float imaginary (struct complex *c1);
 
 #endif /* COMPLEX_H_ */

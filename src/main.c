@@ -64,7 +64,6 @@ while (fgets(line, LINE_SIZE, file) != NULL) {
 	   c3=multiply(c1,c2);
 	   printf("%.1f%+.1fj\n",c3.re,c3.im);
 
-
 	} else if (strcmp(token, "compare") == 0) {
 	   for(i = 0; i < 2; ++i) {
 	       token = strtok(NULL, " ");
@@ -81,8 +80,7 @@ while (fgets(line, LINE_SIZE, file) != NULL) {
 		   puts ("c1 > c2");
 	   } else puts ("c1 < c2");
 
-
-    } else if (strcmp(token, "print") == 0) {
+	} else if (strcmp(token, "print") == 0) {
 	    token = strtok(NULL, " ");
 	    	sscanf(token, "%f %f",&c1->re,&c1->im);
 	    	print(c1);

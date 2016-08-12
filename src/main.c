@@ -17,11 +17,11 @@
 	int i, ret, d;
 	float im, re, k, result1;
 
-if ((file_operation = fopen("operation.txt","r")) == NULL) {
+if ((file_operation = fopen(argv[1],"r")) == NULL) {
 	printf("Failed to open file\n");
 	return -1;
 }
-if ((file_result = fopen ("result.txt","r")) == NULL ) {
+if ((file_result = fopen (argv[2],"r")) == NULL ) {
 	printf("Failed to open file\n");
 	return -1;
 }
